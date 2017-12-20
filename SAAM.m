@@ -10,14 +10,13 @@ function q = SAAM(Ab, Mb)
     ax = Ab(1);       ay = Ab(2);       az = Ab(3);
     mx = Mb(1);       my = Mb(2);       mz = Mb(3);
 
-    mD = dot(Ab, Mb);
-    mN = sqrt(1 - mD^2);
+    mD = ax * mx + ay * my + az * mz;
+    mN = sqrt(1 - mD * mD);
 
-    s = 1 / (-(ay*(mN + mx)) + ax*my);
-    q = [((-1 + az)*(mN + mx) + ax*(mD - mz)) * s;
-         ((-1 + az)*my + ay*(mD - mz)) * s;
-         (az*mD - ax*mN - mz) * s;
-         1];
+    q = [- ay * (mN + mx) + ax * my;
+         (az - 1) * (mN + mx) + ax * (mD - mz);
+         (az - 1) * my + ay * (mD - mz);
+         az * mD - ax * mN - mz];
     
     q = q ./ norm(q);
 end
