@@ -2,4 +2,4 @@
 
 Super-fast Attitude of Accelerometer and Magnetometer (SAAM) proposed by Jin Wu, Zebo Zhou and Hassen Fourati.
 
-Related paper has been submitted to IET Science Measurement and Technology.
+Related paper has been submitted to IEEE Transactions on Instrumentation and Measurement.
