@@ -1,6 +1,8 @@
 % Super-fast Attitude of Accelerometer and Magnetometer 
-% Jin Wu, Zebo Zhou and Hassen Fourati.
-%
+% Jin Wu, Zebo Zhou, Hassen Fourati and Yuhua Cheng.
+% A Super Fast Attitude Determination Algorithm for Consumer-Level Accelerometer and Magnetometer
+% IEEE Transactions on Consumer Electronics
+% (c) 2018
 % author: Jin Wu
 % e-mail: jin_wu_uestc@hotmail.com; klinsmann.zhou@gmail.com
 
